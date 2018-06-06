@@ -1,0 +1,11 @@
+1. How to compile
+
+./configure 
+make
+
+2. How to use
+sudo ./src/fprobe -i eth0 -S 1500 -f tcp localhost:6688
+
+3. Forward the netflow packet to eth2 
+sudo ./src/fprobe -i eth0 -S 1500 -f tcp -o eth2 localhost:6688
+
